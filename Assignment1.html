@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Registration form</title>
+<link rel='stylesheet' href='sample.css' type='text/css' />
+
+</head>
+<body onload="document.registration12.prn.focus();">
+<h1>Registration Form</h1>
+Use tab keys to move from one input field to the next.
+<form name='registration12' onSubmit="return formValidation();">
+<ul>   <li> <label for="prn"> PRN Number:</label></li>
+                  <input type="text" name="prn" placeholder="Enter Your Prn">
+                    <li> <label for="firstname"> First Name:</label></li>
+                <input type="text" name="firstname"placeholder="Enter Your First Name" size="20">
+                <li> <label for="middlename"> Middle Name:</label></li>
+                    <input type="text "name="middlename" placeholder="Enter Your Middle Name" size="20">
+                    <li> <label for="lastname"> Last Name:</label></li>
+                    <input type="text"name="lastname" placeholder="Enter Your Last Name" size="20">
+                    <li> <label for="mobail"> Mobail Number:</label></li>
+                   <input type="text" name="mobail"placeholder="Enter Your Mobail" size="20">
+                    <li> <label for="email"> Email:</label></li>
+                    <input type="text"name="email" placeholder="Enter Your Email" size="20">
+                    <li> <label for="add">  Address:</label></li>
+                   <br><input type="text" name="add"placeholder="Enter Address here" size=20></br>
+                    
+                   <li><label id="gender">Sex:</label></li>
+                    <input type="radio" name=msex" value="Male">Male
+                    <input type="radio" name="fsex" value="Female">Female
+                    <li> <label for="branch"> Branch:</label></li>
+
+                    <select name="branch">
+                    <option selected="" value="Default">(Please select a branch)</option>
+                            <option value="null">Select Branch:</option>
+                            <option value="comp">Comp</option>
+                            <option value="entc">Entc</option>
+                            <option value="mech">Mech</option>
+                    </select>
+                    <li> <label for="class1"> Class:</label></li>
+                    <select name="class1">
+                    		<option selected="" value="Default">(Please select a class)</option>
+                            <option value="null">Select Class:</option>
+                            <option value="t1">TE1</option>
+                            <option value="t2">TE2</option>
+                            <option value="t3">TE 2nd Shift</option>
+                    </select><br><br>
+                    <li> <label for="hobby"> Hobbies:</label></li>
+                    <br>
+                     <input type="checkbox" name="cricket" checked> Cricket
+                    <input type="checkbox" name="read"> Reading
+                     <input type="checkbox" name="dance"> Dance
+                     <input type="checkbox" name="swim"> Swimming
+                     <input type="checkbox" name="paint"> Painting
+                     <input type="checkbox" name="other"> Other<br><br>
+                     <input type="submit" name="submit" value="Submit" />
+
+</ul>
+        </form>
